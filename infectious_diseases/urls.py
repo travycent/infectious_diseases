@@ -26,6 +26,12 @@ from rest_framework_simplejwt.views import (
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #Disease Reports APIs
+    path('api/', include('disease_report.urls')),
+    #Disease Hospitals APIs
+    path('api/', include('hospitals.urls')),
+    #Disease Types APIs
+    path('api/', include('disease_types.urls')),
     #Used to get the API Token Pair. The token and Refresh Token
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     #Used to Refresh the API Token
