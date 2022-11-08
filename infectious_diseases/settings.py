@@ -38,6 +38,9 @@ SECRET_KEY =  env('SECRET_KEY')
 # Application definition
 
 INSTALLED_APPS = [
+    'disease_types',
+    'hospitals',
+    'disease_report',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
