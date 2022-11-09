@@ -26,7 +26,7 @@ class DistrictApi(APIView):
                 status_code = status.HTTP_201_CREATED
                 response = {
                     'success' : 'True',
-                    'status code' : status_code,
+                    'status_code' : status_code,
                     'message': 'Record Created successfully',
                 }
                 return Response(response,status=status_code)
@@ -38,7 +38,7 @@ class DistrictApi(APIView):
         status_code = status.HTTP_200_OK
         response = {
             'success' : 'True',
-            'status code' : status_code,
+            'status_code' : status_code,
             'data': serializer_class.data,
         }
         return Response(response,status=status_code)
@@ -54,7 +54,7 @@ class DistrictDetailApi(APIView):
             status_code = status.HTTP_200_OK
             response = {
                 'success' : 'True',
-                'status code' : status_code,
+                'status_code' : status_code,
                 'data': serializer_class.data,
             }
             return Response(response,status=status_code)
@@ -62,7 +62,7 @@ class DistrictDetailApi(APIView):
             status_code = status.HTTP_404_NOT_FOUND
             response = {
                     'success' : 'False',
-                    'status code' : status_code,
+                    'status_code' : status_code,
                     'Message': "Data Not Found",
                     
             }
@@ -77,7 +77,7 @@ class DistrictDetailApi(APIView):
                 status_code = status.HTTP_200_OK
                 response = {
                     'success' : 'True',
-                    'status code' : status_code,
+                    'status_code' : status_code,
                     'Message': "Data Updated",
                     'data': serializer_class.data,
                 }
@@ -100,7 +100,7 @@ class HospitalApi(APIView):
                 status_code = status.HTTP_201_CREATED
                 response = {
                     'success' : 'True',
-                    'status code' : status_code,
+                    'status_code' : status_code,
                     'message': 'Record Created successfully',
                 }
                 return Response(response,status=status_code)
@@ -112,7 +112,7 @@ class HospitalApi(APIView):
         status_code = status.HTTP_200_OK
         response = {
             'success' : 'True',
-            'status code' : status_code,
+            'status_code' : status_code,
             'data': serializer_class.data,
         }
         return Response(response,status=status_code)
@@ -128,7 +128,7 @@ class HospitalDetailApi(APIView):
             status_code = status.HTTP_200_OK
             response = {
                 'success' : 'True',
-                'status code' : status_code,
+                'status_code' : status_code,
                 'data': serializer_class.data,
             }
             return Response(response,status=status_code)
@@ -136,7 +136,7 @@ class HospitalDetailApi(APIView):
             status_code = status.HTTP_404_NOT_FOUND
             response = {
                     'success' : 'False',
-                    'status code' : status_code,
+                    'status_code' : status_code,
                     'Message': "Data Not Found",
                     
             }
@@ -151,7 +151,7 @@ class HospitalDetailApi(APIView):
                 status_code = status.HTTP_200_OK
                 response = {
                     'success' : 'True',
-                    'status code' : status_code,
+                    'status_code' : status_code,
                     'Message': "Data Updated",
                     'data': serializer_class.data,
                 }
